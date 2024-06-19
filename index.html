@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Isabarney Travels</title>
+    <link rel="stylesheet" type="text/css" href="travel_recommendation.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo-container">
+          <img
+            src="images/logo_aeroplane.jpeg"
+            alt="Company Logo"
+            class="company-logo"
+          />
+          <span class="company-name">Isabarney</span>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder="Search..."
+            name="search"
+            class="search-input"
+            id="searchInput"
+          />
+          <button type="button" class="search-button" id="btnSearch">
+            Search
+          </button>
+          <button type="reset" class="reset-button">Reset</button>
+        </div>
+      </div>
+      <!-- Container for main content including homepage and search results -->
+      <div class="main-content">
+        <!-- Homepage content -->
+        <div class="home-page">
+          <div class="introduction">
+            <h1>Welcome to our Website!</h1>
+            <p>
+              This website provides you with valuable information about our
+              company and services. Feel free to explore!
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="bx bxl-facebook"></i>Facebook</a>
+              <a href="#"><i class="bx bxl-twitter"></i>Twitter</a>
+              <a href="#"><i class="bx bxl-linkedin"></i>Instagram</a>
+            </div>
+            <button class="book-now-button">Book Now</button>
+          </div>
+        </div>
+        <!-- Container for search results -->
+        <div class="search-results">
+          <!-- Search results will be dynamically added here using JavaScript -->
+        </div>
+        <!-- Assuming you have a container for displaying country details -->
+        <div id="countryDetails">
+          <!-- Other country details go here -->
+          <p id="localTime"></p>
+          <!-- Element to display the local time -->
+        </div>
+      </div>
+    </div>
+    <script src="travel_recommendation.js"></script>
+  </body>
+</html>
